@@ -1,0 +1,102 @@
+$primary: #00b371;
+$secondary: #f4f4f4;
+
+@mixin respond-to($media){
+    @if $media == mobile {
+        @media only screen and (max-width: 750px) { @content; }
+    }
+}
+
+html, body{
+	margin: 0;
+	background: $secondary;
+}
+h5,h4,h3,h2,h1,p,span{
+	margin: 0;
+	font-family:"Josefin Sans";
+}
+h1,h2,h3,h4,h5{
+	font-weight: 300;
+	font-style: normal;
+}
+*{
+	transition: all 0.3s ease;
+}
+
+.view{
+	height:100vh;
+	width:100%;
+}
+.content{
+    text-align:center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.container {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.header{
+	position:fixed;
+	background: $secondary;
+	top:0;
+	width:100%;
+	display: flex;
+	height: 10vh;
+	min-height: 50px;
+	font-size: 2.0em;
+	justify-content:space-between;
+	font-weight: 200;
+	font-style: normal;
+	z-index: 100;
+	span{
+		line-height: 10vh;
+		padding-left: calc(10vh / 2);
+
+		&:hover{
+			cursor: pointer;
+			color: $primary;
+		}
+	}
+	.pages{
+		padding-right: calc(10vh / 2);
+		span{
+			padding:0;
+			margin: 0 10px;
+		}
+	}
+
+	@include respond-to("mobile"){
+    	display: none;
+    }
+}
+.social-icons{
+	span{
+		font-size: 2.0em;
+		margin: 0 2vw;
+
+		&:hover{
+			cursor: pointer;
+			opacity: .5;
+		}
+	}
+}
+.arrow-down{
+	text-align:center;
+	margin: 0 auto;
+	font-size: 3.0em;
+	position:relative;
+	margin-top: -70px;
+	transition: margin 0.3s ease;
+
+	&:hover{
+		cursor: pointer;
+		margin-top: -80px;
+		opacity: .5;
+	}
+
+}
+
+@import "home";
