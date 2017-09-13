@@ -6,6 +6,7 @@ function scrollTo(v) {
 
 $(document).ready(function(){
 	setupHeader();
+	setupEducation();
 	$(".arrow-down").click(function(){
 		scrollTo(".education");
 	});
@@ -13,7 +14,15 @@ $(document).ready(function(){
 function setupHeader(){
 	$(".pages").children("span").each(function () {
     	$(this).click(function(){
-    		scrollTo("."+$(this).text());
+    		scrollTo("#"+$(this).text());
     	});
 	});
+}
+function setupEducation() {
+	var trigger = new ScrollTrigger({
+		toggle: {
+        	visible: 'visible',
+        	hidden: 'invisible'
+		}
+	}, document.body, window);
 }

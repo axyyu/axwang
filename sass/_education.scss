@@ -1,0 +1,29 @@
+.education-boxes{
+	display: flex;
+	justify-content: center;
+
+	div{
+		min-width: 5vw;
+		margin: 0 1vw;
+		padding: 20px;
+		border: 5px solid rgba(0,0,0,0.1);
+	}
+	h3 {
+		font-size: 2.0em;
+		font-weight: 200;
+		padding-bottom: 5px;
+
+		&.underline{
+			border-bottom: 2px solid black;
+		}
+	}
+	.invisible {
+		transition: opacity 0.5s ease;
+		opacity: 0.0;
+	}
+
+	.visible {
+		transition: opacity 0.5s ease;
+		opacity: 1.0;
+	}
+}

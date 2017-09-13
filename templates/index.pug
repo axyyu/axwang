@@ -11,7 +11,7 @@
 
         //- JS
         script(src="js/jquery.js")
-        script(src="js/ScrollMagic.min.js")
+        script(src="js/ScrollTrigger.min.js")
         script(src="js/animations.js")
     
     .body
@@ -24,7 +24,7 @@
                 span music
                 span design
 
-        .view.homepage
+        .view#homepage
             .container
                 .content
                     h1 Andrew Wang
@@ -35,20 +35,28 @@
             .arrow-down
                 span.fa.fa-angle-double-down
 
-        .view.education
+        .view#education
             .container
                 .content
                     h1 education
-                    .social-icons
-                        span.fa.fa-github
+                    .education-boxes
+                        .school.invisible(data-scroll)
+                            h3 school
+                        .work
+                            h3 work
+                        .awards
+                            h3 awards
+                        .other
+                            h3 other
 
-        .view.projects
+
+        .view#projects
             .container
                 .content
                     h1 projects
                     .social-icons
                         span.fa.fa-github
-        .view.music
+        .view#music
             .container
                 .content
                     h1 music
@@ -56,7 +64,7 @@
                         span.fa.fa-soundcloud
                         span.fa.fa-bandcamp
 
-        .view.design
+        .view#design
             .container
                 .content
                     h1 design
