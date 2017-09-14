@@ -1,4 +1,7 @@
-$primary: #00b371;
+$education: #00b371;
+$projects: #38d6d3;
+$music: #3cacd7;
+$design:#4883d6;
 $secondary: #f4f4f4;
 
 @mixin respond-to($media){
@@ -41,6 +44,40 @@ h1{
 	font-size: 3.0em;
 	padding-bottom: 3vh;
 }
+a{
+	color:inherit;
+	text-decoration: none;
+	margin: 0;
+}
+
+.education{
+	&:hover {
+		cursor: pointer;
+		color: $education;
+		opacity: 1 !important;
+	}
+}
+.projects{
+	&:hover {
+		cursor: pointer;
+		color: $projects;
+		opacity: 1 !important;
+	}
+}
+.music{
+	&:hover {
+		cursor: pointer;
+		color: $music;
+		opacity: 1 !important;
+	}
+}
+.design{
+	&:hover {
+		cursor: pointer;
+		color: $design;
+		opacity: 1 !important;
+	}
+}
 
 .header{
 	position:fixed;
@@ -64,11 +101,6 @@ h1{
 		span{
 			padding:0;
 			margin: 0 10px;
-
-			&:hover{
-				cursor: pointer;
-				color: $primary;
-			}
 		}
 	}
 
@@ -105,3 +137,4 @@ h1{
 
 @import "home";
 @import "education";
+@import "music";

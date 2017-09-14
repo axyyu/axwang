@@ -1,0 +1,68 @@
+#music{
+	.allden-tracks {
+		margin: 0 5vw;
+		margin-top: 2vh;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		.track {
+			display: flex;
+			flex-direction: row;
+			background: rgba(0, 0, 0, 0.1);
+			margin: 10px;
+			min-height: 100px;
+			height: 15vh;
+			min-width: 30vw;
+			border-radius: 15vh;
+			//padding: 10px;
+
+			.track-img {
+				min-height: 100px;
+				min-width: 100px;
+				height: 15vh;
+				width: 15vh;
+				border-radius: 15vh;
+			}
+			.track-info {
+				padding: 10px;
+				margin: 0 1vw;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				text-align: left;
+				font-weight: 300;
+				border-radius: 15vh;
+
+				*{
+					margin: 5px 0;
+				}
+
+				h4{
+					font-size: 1.5em;
+				}
+				p{
+					font-size: 1.2em;
+					font-style: italic;
+					word-wrap: break-word;
+				}
+				.track-buttons{
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					justify-content: flex-start;
+					font-size: 1.2em;
+					.music-bar{
+						margin: auto 10px;
+						max-width: calc(calc(100% - 1.2em) - 20px);
+						height: 10px;
+						border-radius: 10px;
+						background: #3cacd7;
+						border-right: 2px solid black;
+					}
+				}
+			}
+		}
+	}
+}

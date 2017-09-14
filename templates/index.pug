@@ -13,16 +13,17 @@
         script(src="js/jquery.js")
         script(src="js/ScrollTrigger.min.js")
         script(src="js/animations.js")
+        script(src="js/scripts.js")
     
     .body
         //- span.fa.fa-circle-o-notch.fa-spin.fa-3x.fa-fw
         .header
             span Andrew Wang
             .pages
-                span education
-                span projects
-                span music
-                span design
+                span.education education
+                span.projects projects
+                span.music music
+                span.design design
 
         .view#homepage
             .container
@@ -61,8 +62,50 @@
                 .content
                     h1 music
                     .social-icons
-                        span.fa.fa-soundcloud
-                        span.fa.fa-bandcamp
+                        a(href="https://soundcloud.com/allden")
+                            span.music.fa.fa-soundcloud
+                        a(href="https://allden.bandcamp.com/")
+                            span.music.fa.fa-bandcamp
+                        a(href="https://open.spotify.com/artist/4drtOysPuPNEdiC0PNM6eo")
+                            span.music.fa.fa-spotify
+                    .allden-tracks
+                        .track
+                            img.track-img(src="img/music/zephyr.png")
+                            .track-info
+                                h4 Zephyr
+                                p "Just to reach our home... Find our home"
+                                .track-buttons
+                                    audio(src='song/zephyr.mp3')
+                                    span(onclick="playMusic(this)").music.fa.fa-play
+                                    span.music-bar
+                        .track
+                            img.track-img(src="img/music/paris.png")
+                            .track-info
+                                h4 Paris
+                                p "Paris remix of chainsmokers"
+                                .track-buttons
+                                    audio(src='song/paris.mp3')
+                                    span(onclick="playMusic(this)").music.fa.fa-play
+                                    span.music-bar
+                        .track
+                            img.track-img(src="img/music/zephyr.png")
+                            .track-info
+                                h4 Zephyr
+                                p "Just to reach our home... Find our home"
+                                .track-buttons
+                                    audio(src='song/zephyr.mp3')
+                                    span(onclick="playMusic(this)").music.fa.fa-play
+                                    span.music-bar
+                        .track
+                            img.track-img(src="img/music/paris.png")
+                            .track-info
+                                h4 Paris
+                                p "Paris remix of chainsmokers"
+                                .track-buttons
+                                    audio(src='song/paris.mp3')
+                                    span(onclick="playMusic(this)").music.fa.fa-play
+                                    span.music-bar
+
 
         .view#design
             .container

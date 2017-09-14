@@ -8,7 +8,7 @@ $(document).ready(function(){
 	setupHeader();
 	setupEducation();
 	$(".arrow-down").click(function(){
-		scrollTo(".education");
+		scrollTo("#education");
 	});
 });
 function setupHeader(){
