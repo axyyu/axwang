@@ -77,7 +77,7 @@ a {
     .header .pages span {
       padding: 0;
       margin: 0 10px; }
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 850px) {
     .header {
       display: none; } }
 
@@ -128,24 +128,25 @@ a {
     #education .education-boxes .edu * {
       margin: 5px 0; }
     #education .education-boxes .edu h3 {
-      font-size: 1.7em;
-      text-decoration: underline; }
+      font-size: 1.7em; }
     #education .education-boxes .edu h4 {
       font-weight: 300;
       font-size: 1.5em; }
     #education .education-boxes .edu h5 {
       font-size: 1.4em;
       font-weight: 300;
-      opacity: .8; }
+      opacity: .9; }
     #education .education-boxes .edu .stats {
+      margin-bottom: 0;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-around;
       width: 100%; }
       #education .education-boxes .edu .stats p {
-        margin: 0 5px;
-        font-size: 1em; }
+        margin-top: 5px;
+        font-weight: 300;
+        font-size: 1.2em; }
     #education .education-boxes .edu.schools .school {
       border-left: 5px solid rgba(255, 255, 255, 0.3);
       padding-left: 10px; }
@@ -174,6 +175,16 @@ a {
         font-size: 1.2em;
         font-weight: 300;
         background: rgba(255, 255, 255, 0.2); }
+    #education .education-boxes .edu.contests .contest h4 {
+      border-left: 5px solid rgba(255, 255, 255, 0.3);
+      padding: 5px 0;
+      padding-left: 10px;
+      margin: 10px 0; }
+    #education .education-boxes .edu.other .otherlist h4 {
+      border-left: 5px solid rgba(255, 255, 255, 0.3);
+      padding: 5px 0;
+      padding-left: 10px;
+      margin: 10px 0; }
 
 #music .allden-tracks {
   margin: 0 5vw;
@@ -286,11 +297,11 @@ a {
     flex-direction: column;
     background: rgba(0, 0, 0, 0.1);
     margin: 10px;
-    min-height: 100px;
-    min-width: 100px; }
+    min-height: 150px;
+    min-width: 150px; }
     #design .designs .des img {
-      min-height: 100px;
-      min-width: 100px;
+      min-height: 150px;
+      min-width: 150px;
       height: 15vh;
       width: 15vh; }
     #design .designs .des .info {
