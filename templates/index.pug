@@ -1,6 +1,6 @@
-.DOCTYPE(html)
-.html
-    .head
+DOCTYPE(html)
+html
+    head
         .meta(charset="utf-8")
         title="Andrew Wang"
 
@@ -15,7 +15,7 @@
         script(src="js/animations.js")
         script(src="js/scripts.js")
     
-    .body
+    body
         //- span.fa.fa-circle-o-notch.fa-spin.fa-3x.fa-fw
         .header
             span Andrew Wang
@@ -41,13 +41,31 @@
                 .content
                     h1 education
                     .education-boxes
-                        .school.invisible(data-scroll)
+                        .edu.schools
                             h3 school
-                        .work
+                            .stats
+                                p GPA: 4.42
+                                p ACT: 35/36
+                                p High School
+                            .school
+                                h4 Thomas Jefferson High School for Science and Technology
+                                h5.year Class of 2018
+                                .classes
+                                    p Artificial Intelligence
+                        .edu.work
                             h3 work
-                        .awards
-                            h3 awards
-                        .other
+                            .job
+                                h4 Valador Inc. - Developer
+                                h5.year August 2016
+                                .jobc
+                                    p php
+                        .edu.contests
+                            h3 contests
+                            .contest
+                                h4 HackTJ 2017 MLH Grand Prize
+                                h4 Siemens 2016 Semifinals
+                                h4 USA Computing Olympiad (Silver)
+                        .edu
                             h3 other
 
 
@@ -56,7 +74,21 @@
                 .content
                     h1 projects
                     .social-icons
-                        span.fa.fa-github
+                        span.projects.fa.fa-github
+                    .projects-list
+                        .project
+                            img(src="img/projects/dawn.png")
+                            .info
+                                h4 Dawn
+                                p Researcher's Search Engine
+                                .buttons
+                                    a(href="https://soundcloud.com/allden")
+                                        span.projects.fa.fa-external-link
+                                    a(href="https://soundcloud.com/allden")
+                                        span.projects.fa.fa-code
+                                    a(href="https://soundcloud.com/allden")
+                                        span.projects.fa.fa-code-fork
+
         .view#music
             .container
                 .content
@@ -70,48 +102,39 @@
                             span.music.fa.fa-spotify
                     .allden-tracks
                         .track
-                            img.track-img(src="img/music/zephyr.png")
-                            .track-info
+                            img(src="img/music/zephyr.png")
+                            .info
                                 h4 Zephyr
                                 p "Just to reach our home... Find our home"
-                                .track-buttons
+                                .buttons
                                     audio(src='song/zephyr.mp3')
                                     span(onclick="playMusic(this)").music.fa.fa-play
                                     span.music-bar
                         .track
-                            img.track-img(src="img/music/paris.png")
-                            .track-info
+                            img(src="img/music/paris.png")
+                            .info
                                 h4 Paris
                                 p "Paris remix of chainsmokers"
-                                .track-buttons
+                                .buttons
                                     audio(src='song/paris.mp3')
                                     span(onclick="playMusic(this)").music.fa.fa-play
                                     span.music-bar
-                        .track
-                            img.track-img(src="img/music/zephyr.png")
-                            .track-info
-                                h4 Zephyr
-                                p "Just to reach our home... Find our home"
-                                .track-buttons
-                                    audio(src='song/zephyr.mp3')
-                                    span(onclick="playMusic(this)").music.fa.fa-play
-                                    span.music-bar
-                        .track
-                            img.track-img(src="img/music/paris.png")
-                            .track-info
-                                h4 Paris
-                                p "Paris remix of chainsmokers"
-                                .track-buttons
-                                    audio(src='song/paris.mp3')
-                                    span(onclick="playMusic(this)").music.fa.fa-play
-                                    span.music-bar
-
 
         .view#design
             .container
                 .content
                     h1 design
-                    .social-icons
+                    .designs
+                        .des
+                            img(src="img/design/augment.png")
+                            .info
+                                h4 Augment
+                                p Potential Startup
+                        .des
+                            img(src="img/design/augment.png")
+                            .info
+                                h4 Augment
+                                p Potential Startup
 
         .footer
             span

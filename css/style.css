@@ -7,7 +7,7 @@ h5, h4, h3, h2, h1, p, span {
   font-family: "Josefin Sans"; }
 
 h1, h2, h3, h4, h5 {
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal; }
 
 * {
@@ -43,7 +43,7 @@ a {
 
 .projects:hover {
   cursor: pointer;
-  color: #38d6d3;
+  color: #35c3c0;
   opacity: 1 !important; }
 
 .music:hover {
@@ -66,7 +66,7 @@ a {
   min-height: 50px;
   font-size: 2.0em;
   justify-content: space-between;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   z-index: 100; }
   .header span {
@@ -108,26 +108,72 @@ a {
     font-size: 4.0em;
     padding-bottom: 10vh; }
 
-.education-boxes {
+#education .education-boxes {
+  margin: 0 5vw;
+  margin-top: 2vh;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center; }
-  .education-boxes div {
-    min-width: 5vw;
-    margin: 0 1vw;
+  #education .education-boxes .edu {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    min-height: 100px;
+    min-width: 150px;
     padding: 20px;
-    border: 5px solid rgba(0, 0, 0, 0.1); }
-  .education-boxes h3 {
-    font-size: 2.0em;
-    font-weight: 200;
-    padding-bottom: 5px; }
-    .education-boxes h3.underline {
-      border-bottom: 2px solid black; }
-  .education-boxes .invisible {
-    transition: opacity 0.5s ease;
-    opacity: 0.0; }
-  .education-boxes .visible {
-    transition: opacity 0.5s ease;
-    opacity: 1.0; }
+    max-width: 20vw;
+    text-align: left; }
+    #education .education-boxes .edu * {
+      margin: 5px 0; }
+    #education .education-boxes .edu h3 {
+      font-size: 1.7em;
+      text-decoration: underline; }
+    #education .education-boxes .edu h4 {
+      font-weight: 300;
+      font-size: 1.5em; }
+    #education .education-boxes .edu h5 {
+      font-size: 1.4em;
+      font-weight: 300;
+      opacity: .8; }
+    #education .education-boxes .edu .stats {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 100%; }
+      #education .education-boxes .edu .stats p {
+        margin: 0 5px;
+        font-size: 1em; }
+    #education .education-boxes .edu.schools .school {
+      border-left: 5px solid rgba(255, 255, 255, 0.3);
+      padding-left: 10px; }
+    #education .education-boxes .edu.schools .classes {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      text-align: left; }
+      #education .education-boxes .edu.schools .classes p {
+        margin: 5px;
+        padding: 10px;
+        font-size: 1.2em;
+        font-weight: 300;
+        background: rgba(255, 255, 255, 0.3); }
+    #education .education-boxes .edu.work .job {
+      border-left: 5px solid rgba(255, 255, 255, 0.3);
+      padding-left: 10px; }
+    #education .education-boxes .edu.work .jobc {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      text-align: left; }
+      #education .education-boxes .edu.work .jobc p {
+        margin: 5px;
+        padding: 10px;
+        font-size: 1.2em;
+        font-weight: 300;
+        background: rgba(255, 255, 255, 0.2); }
 
 #music .allden-tracks {
   margin: 0 5vw;
@@ -142,16 +188,15 @@ a {
     background: rgba(0, 0, 0, 0.1);
     margin: 10px;
     min-height: 100px;
-    height: 15vh;
     min-width: 30vw;
     border-radius: 15vh; }
-    #music .allden-tracks .track .track-img {
+    #music .allden-tracks .track img {
       min-height: 100px;
       min-width: 100px;
       height: 15vh;
       width: 15vh;
       border-radius: 15vh; }
-    #music .allden-tracks .track .track-info {
+    #music .allden-tracks .track .info {
       padding: 10px;
       margin: 0 1vw;
       display: flex;
@@ -160,26 +205,109 @@ a {
       text-align: left;
       font-weight: 300;
       border-radius: 15vh; }
-      #music .allden-tracks .track .track-info * {
+      #music .allden-tracks .track .info * {
         margin: 5px 0; }
-      #music .allden-tracks .track .track-info h4 {
+      #music .allden-tracks .track .info h4 {
         font-size: 1.5em; }
-      #music .allden-tracks .track .track-info p {
+      #music .allden-tracks .track .info p {
         font-size: 1.2em;
         font-style: italic;
         word-wrap: break-word; }
-      #music .allden-tracks .track .track-info .track-buttons {
+      #music .allden-tracks .track .info .buttons {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-start;
         font-size: 1.2em; }
-        #music .allden-tracks .track .track-info .track-buttons .music-bar {
+        #music .allden-tracks .track .info .buttons span {
+          margin: 0; }
+        #music .allden-tracks .track .info .buttons .music {
+          width: 1.2em; }
+        #music .allden-tracks .track .info .buttons .music-bar {
           margin: auto 10px;
           max-width: calc(calc(100% - 1.2em) - 20px);
           height: 10px;
           border-radius: 10px;
           background: #3cacd7;
           border-right: 2px solid black; }
+
+#projects .projects-list {
+  margin: 0 5vw;
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  #projects .projects-list .project {
+    display: flex;
+    flex-direction: row;
+    background: rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    min-height: 100px;
+    min-width: 30vw; }
+    #projects .projects-list .project img {
+      min-height: 100px;
+      min-width: 100px;
+      height: 15vh;
+      width: 15vh; }
+    #projects .projects-list .project .info {
+      padding: 10px;
+      margin: 0 1vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+      font-weight: 300; }
+      #projects .projects-list .project .info * {
+        margin: 5px 0; }
+      #projects .projects-list .project .info h4 {
+        font-size: 1.5em; }
+      #projects .projects-list .project .info p {
+        font-size: 1.2em;
+        word-wrap: break-word; }
+      #projects .projects-list .project .info .buttons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: 1.2em; }
+        #projects .projects-list .project .info .buttons a {
+          margin: 0; }
+
+#design .designs {
+  margin: 0 5vw;
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  #design .designs .des {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    min-height: 100px;
+    min-width: 100px; }
+    #design .designs .des img {
+      min-height: 100px;
+      min-width: 100px;
+      height: 15vh;
+      width: 15vh; }
+    #design .designs .des .info {
+      padding: 10px;
+      margin: 1vw 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+      font-weight: 300;
+      width: calc(15vh - 20px); }
+      #design .designs .des .info * {
+        margin: 5px 0; }
+      #design .designs .des .info h4 {
+        font-size: 1.5em; }
+      #design .designs .des .info p {
+        font-size: 1.2em;
+        word-wrap: break-word; }
 
 /*# sourceMappingURL=style.css.map */

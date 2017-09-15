@@ -1,0 +1,48 @@
+#design{
+	.designs {
+		margin: 0 5vw;
+		margin-top: 2vh;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		.des {
+			display: flex;
+			flex-direction: column;
+			background: rgba(0, 0, 0, 0.1);
+			margin: 10px;
+			min-height: 100px;
+			min-width: 100px;
+
+			img {
+				min-height: 100px;
+				min-width: 100px;
+				height: 15vh;
+				width: 15vh;
+			}
+			.info {
+				padding: 10px;
+				margin: 1vw 0;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				text-align: left;
+				font-weight: 300;
+				width: calc(15vh - 20px);
+
+				*{
+					margin: 5px 0;
+				}
+
+				h4{
+					font-size: 1.5em;
+				}
+				p{
+					font-size: 1.2em;
+					word-wrap: break-word;
+				}
+			}
+		}
+	}
+}

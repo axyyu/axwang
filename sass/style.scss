@@ -1,5 +1,5 @@
 $education: #00b371;
-$projects: #38d6d3;
+$projects: #35c3c0;
 $music: #3cacd7;
 $design:#4883d6;
 $secondary: #f4f4f4;
@@ -19,7 +19,7 @@ h5,h4,h3,h2,h1,p,span{
 	font-family:"Josefin Sans";
 }
 h1,h2,h3,h4,h5{
-	font-weight: 300;
+	font-weight: 400;
 	font-style: normal;
 }
 *{
@@ -89,7 +89,7 @@ a{
 	min-height: 50px;
 	font-size: 2.0em;
 	justify-content:space-between;
-	font-weight: 300;
+	font-weight: 400;
 	font-style: normal;
 	z-index: 100;
 	span{
@@ -138,3 +138,5 @@ a{
 @import "home";
 @import "education";
 @import "music";
+@import "projects";
+@import "design";
