@@ -27,8 +27,12 @@ h1,h2,h3,h4,h5{
 }
 
 .view{
-	height:100vh;
+	text-align: center;
+	min-height:100vh;
 	width:100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 .content{
     text-align:center;
@@ -127,12 +131,13 @@ a{
 	margin-top: -70px;
 	transition: margin 0.3s ease;
 
-	&:hover{
-		cursor: pointer;
-		margin-top: -80px;
-		opacity: .5;
+	.fa-angle-double-down{
+		&:hover{
+			cursor: pointer;
+			margin-top: -10px;
+			opacity: .5;
+		}
 	}
-
 }
 
 @import "home";

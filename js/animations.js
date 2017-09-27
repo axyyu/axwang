@@ -6,8 +6,7 @@ function scrollTo(v) {
 
 $(document).ready(function(){
 	setupHeader();
-	setupEducation();
-	$(".arrow-down").click(function(){
+	$(".fa-angle-double-down").click(function(){
 		scrollTo("#education");
 	});
 });
@@ -17,12 +16,4 @@ function setupHeader(){
     		scrollTo("#"+$(this).text());
     	});
 	});
-}
-function setupEducation() {
-	var trigger = new ScrollTrigger({
-		toggle: {
-        	visible: 'visible',
-        	hidden: 'invisible'
-		}
-	}, document.body, window);
 }

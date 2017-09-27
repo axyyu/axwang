@@ -14,8 +14,12 @@ h1, h2, h3, h4, h5 {
   transition: all 0.3s ease; }
 
 .view {
-  height: 100vh;
-  width: 100%; }
+  text-align: center;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
 .content {
   text-align: center;
@@ -95,9 +99,9 @@ a {
   position: relative;
   margin-top: -70px;
   transition: margin 0.3s ease; }
-  .arrow-down:hover {
+  .arrow-down .fa-angle-double-down:hover {
     cursor: pointer;
-    margin-top: -80px;
+    margin-top: -10px;
     opacity: .5; }
 
 #homepage {
@@ -109,21 +113,25 @@ a {
     padding-bottom: 10vh; }
 
 #education .education-boxes {
-  margin: 0 5vw;
+  margin: 0 auto;
   margin-top: 2vh;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center; }
+  width: 40%;
+  height: 40%;
+  min-width: 400px;
+  min-height: 400px; }
+  #education .education-boxes .fa {
+    font-size: 2.0em;
+    margin: 20px 5vw; }
+    #education .education-boxes .fa:hover {
+      cursor: pointer;
+      color: #00b371; }
   #education .education-boxes .edu {
+    outline-color: #00b371 !important;
     display: flex;
     flex-direction: column;
     background: rgba(0, 0, 0, 0.1);
     margin: 10px;
-    min-height: 100px;
-    min-width: 150px;
     padding: 20px;
-    max-width: 20vw;
     text-align: left; }
     #education .education-boxes .edu * {
       margin: 5px 0; }

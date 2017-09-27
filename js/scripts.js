@@ -3,8 +3,18 @@
  */
 
 $(document).ready(function(){
-
+    setupEducation();
 });
+function setupEducation(){
+    $('.education-carousel').slick({
+        infinite: false,
+        arrows: true,
+        prevArrow: $(".fa.fa-angle-left"),
+        nextArrow: $(".fa.fa-angle-right"),
+        autoplay: true,
+        autoplaySpeed: 2000
+    });
+}
 function playMusic(t){
     var parent = $(t).parent().children();
     var aud = parent[0];
