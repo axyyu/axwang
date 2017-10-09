@@ -115,10 +115,10 @@ a {
 #education .education-boxes {
   margin: 0 auto;
   margin-top: 2vh;
-  width: 40%;
-  height: 40%;
-  min-width: 400px;
-  min-height: 400px; }
+  width: 40vw;
+  height: 40vh;
+  min-width: 300px;
+  min-height: 300px; }
   #education .education-boxes .fa {
     font-size: 2.0em;
     margin: 20px 5vw; }
@@ -127,15 +127,17 @@ a {
       color: #00b371; }
   #education .education-boxes .edu {
     outline-color: #00b371 !important;
-    display: flex;
     flex-direction: column;
     background: rgba(0, 0, 0, 0.1);
     margin: 10px;
     padding: 20px;
-    text-align: left; }
+    text-align: left;
+    height: 100%;
+    overflow: auto; }
     #education .education-boxes .edu * {
-      margin: 5px 0; }
+      margin: 10px 0; }
     #education .education-boxes .edu h3 {
+      margin: 0;
       font-size: 1.7em; }
     #education .education-boxes .edu h4 {
       font-weight: 300;
@@ -145,16 +147,23 @@ a {
       font-weight: 300;
       opacity: .9; }
     #education .education-boxes .edu .stats {
-      margin-bottom: 0;
+      margin: 10px 0;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-around;
-      width: 100%; }
+      width: 100%;
+      height: 1.5em; }
       #education .education-boxes .edu .stats p {
         margin-top: 5px;
         font-weight: 300;
         font-size: 1.2em; }
+    #education .education-boxes .edu.skills .skilllist p {
+      margin: 5px;
+      padding: 10px;
+      font-size: 1.2em;
+      font-weight: 300;
+      background: rgba(255, 255, 255, 0.3); }
     #education .education-boxes .edu.schools .school {
       border-left: 5px solid rgba(255, 255, 255, 0.3);
       padding-left: 10px; }
@@ -216,16 +225,14 @@ a {
       width: 15vh;
       border-radius: 15vh; }
     #music .allden-tracks .track .info {
+      margin: 5px 1vw;
       padding: 10px;
-      margin: 0 1vw;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-around;
       text-align: left;
       font-weight: 300;
       border-radius: 15vh; }
-      #music .allden-tracks .track .info * {
-        margin: 5px 0; }
       #music .allden-tracks .track .info h4 {
         font-size: 1.5em; }
       #music .allden-tracks .track .info p {
@@ -244,7 +251,7 @@ a {
           width: 1.2em; }
         #music .allden-tracks .track .info .buttons .music-bar {
           margin: auto 10px;
-          max-width: calc(calc(100% - 1.2em) - 20px);
+          max-width: calc(calc(100% - 1.2em) - 30px);
           height: 10px;
           border-radius: 10px;
           background: #3cacd7;
@@ -270,15 +277,12 @@ a {
       height: 15vh;
       width: 15vh; }
     #projects .projects-list .project .info {
-      padding: 10px;
-      margin: 0 1vw;
+      margin: 5px 1vw;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-around;
       text-align: left;
       font-weight: 300; }
-      #projects .projects-list .project .info * {
-        margin: 5px 0; }
       #projects .projects-list .project .info h4 {
         font-size: 1.5em; }
       #projects .projects-list .project .info p {
@@ -320,7 +324,7 @@ a {
       justify-content: center;
       text-align: left;
       font-weight: 300;
-      width: calc(15vh - 20px); }
+      width: 15vh; }
       #design .designs .des .info * {
         margin: 5px 0; }
       #design .designs .des .info h4 {
@@ -328,5 +332,3 @@ a {
       #design .designs .des .info p {
         font-size: 1.2em;
         word-wrap: break-word; }
-
-/*# sourceMappingURL=style.css.map */

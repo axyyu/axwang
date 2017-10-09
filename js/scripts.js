@@ -7,11 +7,11 @@ $(document).ready(function(){
 });
 function setupEducation(){
     $('.education-carousel').slick({
-        infinite: false,
+        infinite: true,
         arrows: true,
         prevArrow: $(".fa.fa-angle-left"),
         nextArrow: $(".fa.fa-angle-right"),
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2000
     });
 }
