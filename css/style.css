@@ -57,7 +57,7 @@ a {
 
 .design:hover {
   cursor: pointer;
-  color: #4883d6;
+  color: #488398;
   opacity: 1 !important; }
 
 .header {
@@ -103,6 +103,11 @@ a {
     cursor: pointer;
     margin-top: -10px;
     opacity: .5; }
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  margin: 0 auto; }
 
 #homepage {
   background-image: url("../img/sunrise.jpg");

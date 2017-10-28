@@ -4,7 +4,7 @@ html
         .meta(charset="utf-8")
         title="Andrew Wang"
         
-        link(rel="shortcut icon" type="image/png" href="img/home.png")
+        link(rel="shortcut icon" type="image/png" href="favicon.png")
 
         //- CSS
         link(rel="stylesheet" type="text/css" href="fonts/stylesheet.css")
@@ -35,11 +35,11 @@ html
                 .content
                     h1 Andrew Wang
                     .social-icons
-                        a(href="https://www.facebook.com/andrewxiaoyu")
-                            span.fa.fa-facebook
-                        a(href="mailto:andrewxiaoyu0@gmail.com")
+                        a(href="mailto:andrewxiaoyu0@gmail.com", title="Email")
                             span.fa.fa-envelope
-                        a(href="https://www.linkedin.com/in/andrewxwang/")
+                        a(href="Resume.pdf", title="Resume")
+                            span.fa.fa-file-pdf-o
+                        a(href="https://www.linkedin.com/in/andrewxwang/", title="LinkedIn")
                             span.fa.fa-linkedin
             .arrow-down
                 span.fa.fa-angle-double-down
@@ -84,10 +84,16 @@ html
                             h4 Valador Inc. - Developer
                             h5.year August 2016
                             .jobc
-                                p php
+                                p PHP
                                 p MySQL
                                 p WordPress
                                 p swift
+                    .edu.other
+                        h3 activities
+                        .otherlist
+                            h4 HackTJ Organizer
+                            h4 CubeSat Programmer
+                            h4 Assistive Technology Webmaster
                     .edu.contests
                         h3 contests
                         .stats
@@ -97,16 +103,7 @@ html
                             h4 HackTJ 2017 MLH Grand Prize
                             h4 Siemens 2016 Semifinalist
                             h4 National Merit Semifinalist
-                            h4 Make School's Student App
-                            h4 USA Computing Olympiad (Silver)
-                    .edu.other
-                        h3 activities
-                        .otherlist
-                            h4 HackTJ Organizer
-                            h4 CubeSAT Programmer
-                            h4 Assistive Technology Webmaster
-                            h4 StartUp TJ
-                            h4 Choir
+                    
                 .fa.fa-angle-left
                 .fa.fa-angle-right
         .view#projects
@@ -116,42 +113,13 @@ html
                     span.projects.fa.fa-github
             .projects-list
                 .project
-                    img(src="img/projects/catalyst.png")
-                    .info
-                        h4 Catalyst
-                        p Quantopian Trading Algorithm
-                        .buttons
-                            p No Links
-                            //- a(href="https://soundcloud.com/allden")
-                            //-     span.projects.fa.fa-external-link
-                            //- a(href="https://soundcloud.com/allden")
-                            //-     span.projects.fa.fa-code
-                            //- a(href="https://soundcloud.com/allden")
-                            //-     span.projects.fa.fa-code-fork
-                .project
-                    img(src="img/projects/chromapulse.jpg")
-                    .info
-                        h4 Chromapulse
-                        p Music Loop Generator
-                        .buttons
-                            a(href="http://chromapulse.herokuapp.com")
-                                span.projects.fa.fa-external-link
-                            //- a(href="https://soundcloud.com/allden")
-                            //-     span.projects.fa.fa-code
-                            //- a(href="https://soundcloud.com/allden")
-                            //-     span.projects.fa.fa-code-fork
-                .project
                     img(src="img/projects/dawn.png")
                     .info
                         h4 Dawn (v1)
-                        p Researcher's Search Engine
+                        p Database Search Engine
                         .buttons
                             a(href="http://dawn-search.herokuapp.com")
                                 span.projects.fa.fa-external-link
-                            //- a(href="https://soundcloud.com/allden")
-                            //-     span.projects.fa.fa-code
-                            //- a(href="https://soundcloud.com/allden")
-                            //-     span.projects.fa.fa-code-fork
                 .project
                     img(src="img/projects/debrief.png")
                     .info
@@ -160,48 +128,36 @@ html
                         .buttons
                             a(href="https://devpost.com/software/debrief")
                                 span.projects.fa.fa-external-link
-                            //- a(href="https://soundcloud.com/allden")
-                            //-     span.projects.fa.fa-code
-                            //- a(href="https://soundcloud.com/allden")
-                            //-     span.projects.fa.fa-code-fork
                 .project
                     img(src="img/projects/foci.png")
                     .info
                         h4 Foci
-                        p Music Curation Using EEGs
+                        p Music Curation Using Muse
                         .buttons
                             a(href="https://devpost.com/software/foci-y29n6b")
                                 span.projects.fa.fa-external-link
-                            //- a(href="https://soundcloud.com/allden")
-                            //-     span.projects.fa.fa-code
-                            //- a(href="https://soundcloud.com/allden")
-                            //-     span.projects.fa.fa-code-fork
+                .project
+                    img(src="img/projects/chromapulse.jpg")
+                    .info
+                        h4 Chromapulse
+                        p Music Loop Generator
+                        .buttons
+                            a(href="http://chromapulse.herokuapp.com")
+                                span.projects.fa.fa-external-link
                 .project
                     img(src="img/projects/haven.png")
                     .info
-                        h4 Haven (in progress)
-                        p Hobbyists' Project Manager
+                        h4 Haven (Beta)
+                        p Project Manager
                         .buttons
                             p No Links
-                            //- a(href="https://soundcloud.com/allden")
-                            //-     span.projects.fa.fa-external-link
-                            //- a(href="https://soundcloud.com/allden")
-                            //-     span.projects.fa.fa-code
-                            //- a(href="https://soundcloud.com/allden")
-                            //-     span.projects.fa.fa-code-fork
                 .project
                     img(src="img/projects/tundra.png")
                     .info
-                        h4 Tundra (in progress)
+                        h4 Tundra (Beta)
                         p Programming Notes
                         .buttons
                             p No Links
-                            //- a(href="https://soundcloud.com/allden")
-                            //-     span.projects.fa.fa-external-link
-                            //- a(href="https://soundcloud.com/allden")
-                            //-     span.projects.fa.fa-code
-                            //- a(href="https://soundcloud.com/allden")
-                            //-     span.projects.fa.fa-code-fork
 
         .view#music
             h1 music
@@ -212,18 +168,9 @@ html
                     span.music.fa.fa-spotify
             .allden-tracks
                 .track
-                    img(src="img/music/imissyou.jpg")
-                    .info
-                        h4 I Miss You
-                        p "Stay with me, let’s not go too far"
-                        .buttons
-                            audio(src='song/imissyou.mp3')
-                            span(onclick="playMusic(this)").music.fa.fa-play
-                            span.music-bar
-                .track
                     img(src="img/music/thecloudscry.jpg")
                     .info
-                        h4 The Clouds Cry
+                        h4 The Clouds Cry (EDM)
                         p "The clouds cry, the gusts scream"
                         .buttons
                             audio(src='song/thecloudscry.mp3')
@@ -232,7 +179,7 @@ html
                 .track
                     img(src="img/music/upnext.jpg")
                     .info
-                        h4 Up Next
+                        h4 Up Next (Rap)
                         p "Nothing stoppin' us from being up next"
                         .buttons
                             audio(src='song/upnext.mp3')
@@ -241,7 +188,7 @@ html
                 .track
                     img(src="img/music/washedaway.jpg")
                     .info
-                        h4 Washed Away
+                        h4 Washed Away (EDM)
                         p "All my worries are washed away"
                         .buttons
                             audio(src='song/washedaway.mp3')
@@ -250,19 +197,28 @@ html
                 .track
                     img(src="img/music/zephyr.png")
                     .info
-                        h4 Zephyr
+                        h4 Zephyr (EDM)
                         p "Just to reach our home... find our home"
                         .buttons
                             audio(src='song/zephyr.mp3')
                             span(onclick="playMusic(this)").music.fa.fa-play
                             span.music-bar
                 .track
-                    img(src="img/music/paris.png")
+                    img(src="img/music/allden.png")
                     .info
-                        h4 Paris Remix
-                        p Paris remix of chainsmokers
+                        h4 Perfect Remix (Pop)
+                        p Ed Sheeran - Perfect
                         .buttons
-                            audio(src='song/paris.mp3')
+                            audio(src='song/perfect.mp3')
+                            span(onclick="playMusic(this)").music.fa.fa-play
+                            span.music-bar
+                .track
+                    img(src="img/music/allden.png")
+                    .info
+                        h4 Slow Hands Remix (Pop)
+                        p Niall Horan - Slow Hands
+                        .buttons
+                            audio(src='song/slowhands.mp3')
                             span(onclick="playMusic(this)").music.fa.fa-play
                             span.music-bar
 
@@ -282,23 +238,8 @@ html
                 .des
                     img(src="img/design/cubesat.png")
                     .info
-                        h4 CubeSAT
+                        h4 CubeSat
                         p Mission Patch
-                .des
-                    img(src="img/design/flow.jpg")
-                    .info
-                        h4 Flow
-                        p Concept
-                .des
-                    img(src="img/design/hub.png")
-                    .info
-                        h4 Hub
-                        p Haven branch
-                .des
-                    img(src="img/design/preset.png")
-                    .info
-                        h4 Preset
-                        p Concept
                 .des
                     img(src="img/design/remora.png")
                     .info
@@ -308,17 +249,7 @@ html
                     img(src="img/design/tidbits.png")
                     .info
                         h4 Tidbits
-                        p Debrief's Logo
-                .des
-                    img(src="img/design/trace.png")
-                    .info
-                        h4 Trace
-                        p Concept
-                .des
-                    img(src="img/design/triangle.png")
-                    .info
-                        h4 Trimagine
-                        p Concept
+                        p Potential Startup
 
         .footer
-            span
+            span &copy; Andrew Wang 2017. All Rights Reserved.

@@ -1,7 +1,7 @@
 $education: #00b371;
 $projects: #35c3c0;
 $music: #3cacd7;
-$design:#4883d6;
+$design:#488398;
 $secondary: #f4f4f4;
 
 @mixin respond-to($media){
@@ -138,6 +138,12 @@ a{
 			opacity: .5;
 		}
 	}
+}
+
+.footer{
+	text-align: center;
+	padding: 20px 0;
+	margin: 0 auto;
 }
 
 @import "home";
