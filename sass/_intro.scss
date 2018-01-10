@@ -1,0 +1,19 @@
+#intro{
+    background: url("../img/sunrise.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .introduction{
+        margin: 0 30vw;
+        margin-top: 5vh;
+
+        h2{
+            font-size: 1.8em;
+            margin: 10px 0px;
+        }
+        h3{
+            font-size: 1.2em;
+            line-height: 1.3em;
+        }
+    }
+}

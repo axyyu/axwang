@@ -1,4 +1,4 @@
-$education: #00b371;
+$intro: #00b371;
 $projects: #35c3c0;
 $music: #3cacd7;
 $design:#488398;
@@ -54,10 +54,10 @@ a{
 	margin: 0;
 }
 
-.education{
+.intro{
 	&:hover {
 		cursor: pointer;
-		color: $education;
+		color: $intro;
 		opacity: 1 !important;
 	}
 }
@@ -147,7 +147,7 @@ a{
 }
 
 @import "home";
-@import "education";
+@import "intro";
 @import "music";
 @import "projects";
 @import "design";
