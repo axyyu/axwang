@@ -10,11 +10,11 @@ gulp.task('default', function() {
 gulp.task('sass', function () {
   return gulp.src('./sass/*.scss')
     .pipe(sass.sync().on('error', sass.logError))
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('./w4v3s.github.io/css'));
 });
 
 gulp.task('pug', function () {
   return gulp.src('./templates/*.pug')
     .pipe(pug())
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('./w4v3s.github.io/'));
 });
