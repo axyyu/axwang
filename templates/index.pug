@@ -1,7 +1,8 @@
 DOCTYPE(html)
 html
     head
-        .meta(charset="utf-8")
+        meta(charset="utf-8")
+        meta(name="viewport",content="width=device-width, initial-scale=1.0") 
         title="Andrew Wang"
         
         link(rel="shortcut icon" type="image/png" href="./favicon.png")
@@ -9,7 +10,7 @@ html
         //- CSS
         link(rel="stylesheet" type="text/css" href="./fonts/stylesheet.css")
         link(rel="stylesheet" type="text/css" href="./css/font-awesome.css")
-        link(rel="stylesheet" type="text/css" href="./css/style.css")
+        link(rel="stylesheet" type="text/css" href="./css/style.css?v=1")
 
         //- JS
         script(src="./js/jquery.js")
@@ -31,7 +32,7 @@ html
             .social-icons
                 a(href="mailto:andrewxiaoyu0@gmail.com", title="Email")
                     span.intro.fa.fa-envelope
-                a(href="Resume.pdf", title="Resume")
+                a(href="resume.pdf", title="Resume")
                     span.intro.fa.fa-file-pdf-o
                 a(href="https://www.linkedin.com/in/andrewxwang/", title="LinkedIn")
                     span.intro.fa.fa-linkedin
@@ -48,7 +49,7 @@ html
                 .project
                     img(src="img/projects/dawn.png")
                     .info
-                        h4 Dawn (v1)
+                        h4 Coresearch (v1)
                         p Database Search Engine
                         .buttons
                             a(href="http://dawn-search.herokuapp.com")
@@ -112,7 +113,7 @@ html
                 .track
                     img(src="img/music/upnext.jpg")
                     .info
-                        h4 Up Next (Rap)
+                        h4 Up Next (Hip Hop)
                         p "Nothing stoppin' us from being up next"
                         .buttons
                             audio(src='song/upnext.mp3')
@@ -148,8 +149,8 @@ html
                 .track
                     img(src="img/music/allden.png")
                     .info
-                        h4 Slow Hands Remix (Pop)
-                        p Niall Horan - Slow Hands
+                        h4 Him and I Remix (Pop)
+                        p G-Easy and Halsey - Him and I
                         .buttons
                             audio(src='song/slowhands.mp3')
                             span(onclick="playMusic(this)").music.fa.fa-play
@@ -183,6 +184,11 @@ html
                     .info
                         h4 Tidbits
                         p Potential Startup
+                .des
+                    img(src="img/design/tidbits.png")
+                    .info
+                        h4 Dawn
+                        p Old Logo
 
         .footer
             span &copy; Andrew Wang 2017. All Rights Reserved.

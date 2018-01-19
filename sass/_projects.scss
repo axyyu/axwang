@@ -15,12 +15,17 @@
 			min-height: 100px;
 			min-width: 30vw;
 
+			@include respond-to(mobile){
+				min-width: 0;
+			}
+
 			img {
 				min-height: 100px;
 				min-width: 100px;
 				height: 15vh;
 				width: 15vh;
 			}
+
 			.info {
 				margin: 5px 1vw;
 				display: flex;
@@ -46,6 +51,10 @@
 					a {
 						margin: 0;
 					}
+				}
+
+				@include respond-to(mobile){
+					display: none;
 				}
 			}
 		}
