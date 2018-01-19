@@ -15,10 +15,12 @@
             font-size: 1.2em;
             line-height: 1.3em;
         }
+        @include respond-to(mobile){
+            margin: 0 20px;
+        }
     }
 
     @include respond-to(mobile){
         background: none;
-        margin: 0 20px;
     }
 }
