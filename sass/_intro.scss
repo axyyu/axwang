@@ -17,6 +17,7 @@
         }
         @include respond-to(mobile){
             margin: 0 20px;
+            margin-top: 5vh;
         }
     }
 

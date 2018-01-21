@@ -5,7 +5,7 @@ html
         meta(name="viewport",content="width=device-width, initial-scale=1.0") 
         title="Andrew Wang"
         
-        link(rel="shortcut icon" type="image/png" href="./favicon.png")
+        link(rel="shortcut icon",type="image/png",href="./favicon.png")
 
         //- CSS
         link(rel="stylesheet" type="text/css" href="./fonts/stylesheet.css")
@@ -32,9 +32,9 @@ html
             .social-icons
                 a(href="mailto:andrewxiaoyu0@gmail.com", title="Email")
                     span.intro.fa.fa-envelope
-                a(href="resume.pdf", title="Resume")
+                a(href="resume.pdf", title="Resume",target="_blank")
                     span.intro.fa.fa-file-pdf-o
-                a(href="https://www.linkedin.com/in/andrewxwang/", title="LinkedIn")
+                a(href="https://www.linkedin.com/in/andrewxwang/", title="LinkedIn",target="_blank")
                     span.intro.fa.fa-linkedin
             .introduction
                 h2 hey! welcome to my website!
@@ -47,44 +47,48 @@ html
                     span.projects.fa.fa-github
             .projects-list
                 .project
-                    img(src="img/projects/dawn.png")
+                    img(src="img/projects/conduit.png")
                     .info
-                        h4 Coresearch (v1)
+                        h4 Conduit
+                        p Startups and Students
+                        .buttons
+                            a(href="https://conduitapps.herokuapp.com",target="_blank")
+                                span.projects.fa.fa-external-link
+                .project
+                    img(src="img/projects/coresearch.png")
+                    .info
+                        h4 Coresearch (alpha)
                         p Database Search Engine
                         .buttons
-                            a(href="http://dawn-search.herokuapp.com")
+                            a(href="https://holmes.wzhang.me/search",target="_blank")
                                 span.projects.fa.fa-external-link
-                .project
-                    img(src="img/projects/debrief.png")
-                    .info
-                        h4 Debrief (v2)
-                        p Daily News Reports
-                        .buttons
-                            a(href="https://devpost.com/software/debrief")
-                                span.projects.fa.fa-external-link
-                .project
-                    img(src="img/projects/foci.png")
-                    .info
-                        h4 Foci
-                        p Music Curation Using Muse
-                        .buttons
-                            a(href="https://devpost.com/software/foci-y29n6b")
-                                span.projects.fa.fa-external-link
-                .project
-                    img(src="img/projects/chromapulse.jpg")
-                    .info
-                        h4 Chromapulse
-                        p Music Loop Generator
-                        .buttons
-                            a(href="http://chromapulse.herokuapp.com")
-                                span.projects.fa.fa-external-link
+
                 .project
                     img(src="img/projects/haven.png")
                     .info
                         h4 Haven (Beta)
                         p Project Manager
                         .buttons
+                            a(href="http://axwang.me/haven/",target="_blank")
+                                span.projects.fa.fa-external-link
+                
+                .project
+                    img(src="img/projects/foci.png")
+                    .info
+                        h4 Foci
+                        p Music Curation using EEGs
+                        .buttons
+                            a(href="https://devpost.com/software/foci-y29n6b",target="_blank")
+                                span.projects.fa.fa-external-link
+                
+                .project
+                    img(src="img/projects/debrief.png")
+                    .info
+                        h4 Debrief (alpha)
+                        p Daily News Reports
+                        .buttons
                             p No Links
+
                 .project
                     img(src="img/projects/tundra.png")
                     .info
@@ -96,9 +100,9 @@ html
         .view#music
             h1 music
             .social-icons
-                a(href="https://soundcloud.com/allden")
+                a(href="https://soundcloud.com/allden",target="_blank")
                     span.music.fa.fa-soundcloud
-                a(href="https://open.spotify.com/artist/4drtOysPuPNEdiC0PNM6eo")
+                a(href="https://open.spotify.com/artist/4drtOysPuPNEdiC0PNM6eo",target="_blank")
                     span.music.fa.fa-spotify
             .allden-tracks
                 .track
@@ -149,8 +153,8 @@ html
                 .track
                     img(src="img/music/allden.png")
                     .info
-                        h4 Him and I Remix (Pop)
-                        p G-Easy and Halsey - Him and I
+                        h4 Slow Hands Remix (Pop)
+                        p Niall Horan - Slow Hands
                         .buttons
                             audio(src='song/slowhands.mp3')
                             span(onclick="playMusic(this)").music.fa.fa-play
@@ -164,31 +168,37 @@ html
                     .info
                         h4 Augment
                         p Concept
+
                 .des
-                    img(src="img/design/aura.png")
+                    img(src="img/design/chromapulse.jpg")
                     .info
-                        h4 Aura
-                        p Potential Startup
-                .des
-                    img(src="img/design/cubesat.png")
-                    .info
-                        h4 CubeSat
-                        p Mission Patch
+                        h4 Chrome
+                        p Old Logo
+
                 .des
                     img(src="img/design/remora.png")
                     .info
                         h4 Remora
                         p Aerospace Startup
+                
+                .des
+                    img(src="img/design/dawn.png")
+                    .info
+                        h4 Dawn
+                        p Old Logo
+                        
                 .des
                     img(src="img/design/tidbits.png")
                     .info
                         h4 Tidbits
                         p Potential Startup
+                
                 .des
-                    img(src="img/design/tidbits.png")
+                    img(src="img/design/aura.png")
                     .info
-                        h4 Dawn
-                        p Old Logo
+                        h4 Aura
+                        p Potential Startup
+                
 
         .footer
             span &copy; Andrew Wang 2017. All Rights Reserved.
