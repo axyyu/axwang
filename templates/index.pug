@@ -9,6 +9,7 @@ html
 
         //- CSS
         link(rel="stylesheet" type="text/css" href="./fonts/stylesheet.css")
+        link(rel="stylesheet" type="text/css" href="./fonts/fontstylesheet.css")
         link(rel="stylesheet" type="text/css" href="./css/font-awesome.css")
         link(rel="stylesheet" type="text/css" href="./css/style.css?v=1")
 
@@ -28,7 +29,10 @@ html
                 span.design design
 
         .view#intro
-            h1 andrew wang
+            .introduction
+                img(src="img/me.jpg")
+                h2 Hey!
+                h3 My name is Andrew Wang. I love web and mobile development and have dabbled a bit in music production and design. I also enjoy studying machine learning and quantitative analysis.
             .social-icons
                 a(href="mailto:andrewxiaoyu0@gmail.com", title="Email")
                     span.intro.fa.fa-envelope
@@ -36,9 +40,7 @@ html
                     span.intro.fa.fa-file-pdf-o
                 a(href="https://www.linkedin.com/in/andrewxwang/", title="LinkedIn",target="_blank")
                     span.intro.fa.fa-linkedin
-            .introduction
-                h2 hey! welcome to my website!
-                h3 i'm a full stack web and mobile developer, music producer, and graphic designer. feel free to take a look around some of my works and contact me if you would like to collaborate!
+            
 
         .view#projects
             h1 projects

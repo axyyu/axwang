@@ -12,7 +12,7 @@
 			flex-direction: row;
 			background: rgba(0, 0, 0, 0.1);
 			margin: 10px;
-			min-height: 100px;
+			height: 100px;
 			min-width: 30vw;
 
 			@include respond-to(mobile){
@@ -22,18 +22,22 @@
 			img {
 				min-height: 100px;
 				min-width: 100px;
-				height: 15vh;
-				width: 15vh;
+				max-height: 100%;
+				max-width: inherit;
 			}
 
 			.info {
 				margin: 5px 1vw;
+				padding: 10px;
 				display: flex;
 				flex-direction: column;
 				justify-content: space-around;
 				text-align: left;
 				font-weight: 300;
 
+				*{
+					margin: 2px 0;
+				}
 				h4{
 					font-size: 1.5em;
 				}

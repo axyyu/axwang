@@ -4,20 +4,27 @@
     background-size: cover;
 
     .introduction{
-        margin: 0 30vw;
-        margin-top: 5vh;
+        margin: 5vh 30vw;
+        text-align: center;
 
+        img{
+            height: 30vh;
+            width: 30vh;
+            border-radius: 100vw;
+        }
         h2{
-            font-size: 1.8em;
+            font-family: 'Shadows Into Light';
+            font-size: 3em;
             margin: 10px 0px;
         }
         h3{
+            display: inline-block;
             font-size: 1.2em;
             line-height: 1.3em;
+            max-width: 500px;
         }
         @include respond-to(mobile){
-            margin: 0 20px;
-            margin-top: 5vh;
+            margin: 5vh 20px;
         }
     }
 
