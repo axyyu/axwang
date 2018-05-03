@@ -30,13 +30,13 @@
 			
 			.info {
 				margin: 5px 1vw;
-				padding: 10px;
 				display: flex;
 				flex-direction: column;
 				justify-content: space-around;
 				text-align: left;
 				font-weight: 300;
 				border-radius: 15vh;
+				padding: 0 10px;
 
 				@include respond-to(mobile){
 					display: none;
