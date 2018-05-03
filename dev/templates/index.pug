@@ -1,0 +1,205 @@
+DOCTYPE(html)
+html
+    head
+        meta(charset="utf-8")
+        meta(name="viewport",content="width=device-width, initial-scale=1.0") 
+        title="Andrew Wang"
+        
+        link(rel="shortcut icon" type="image/png" href="img/favicon.png")
+
+        //- CSS
+        link(rel="stylesheet" type="text/css" href="./css/style.css?v=1")
+
+        //- JS
+        script(src="./js/jquery.js")
+        script(src="./js/animations.js")
+        script(src="./js/scripts.js")
+
+    body
+        //- span.fa.fa-circle-o-notch.fa-spin.fa-3x.fa-fw
+        .header
+            span andrew x wang
+            .pages
+                span.intro intro
+                span.projects projects
+                span.music music
+                span.design design
+
+        .view#intro
+            .introduction
+                img(src="img/me.jpg")
+                h2 Hey!
+                h3 My name is Andrew Wang. I love web and mobile development and have dabbled a bit in music production and design. I also enjoy studying machine learning and quantitative analysis.
+            .social-icons
+                a(href="mailto:andrewxiaoyu0@gmail.com", title="Email")
+                    span.intro.fa.fa-envelope
+                a(href="resume.pdf", title="Resume",target="_blank")
+                    span.intro.fas.fa-file-pdf
+                a(href="https://www.linkedin.com/in/andrewxwang/", title="LinkedIn",target="_blank")
+                    span.intro.fab.fa-linkedin
+            
+
+        .view#projects
+            h1 projects
+            .social-icons
+                a(href="https://github.com/w4v3s")
+                    span.projects.fab.fa-github
+            .projects-list
+                .project
+                    img(src="img/projects/conduit.png")
+                    .info
+                        h4 Conduit
+                        p Startups and Students
+                        .buttons
+                            a(href="http://axwang.me/conduit/",target="_blank")
+                                span.projects.fa.fa-external-link
+
+                .project
+                    img(src="img/projects/tundra.png")
+                    .info
+                        h4 Tundra (Alpha)
+                        p Programming Notes
+                        .buttons
+                            a(href="http://axwang.me/tundra/",target="_blank")
+                                span.projects.fa.fa-external-link
+
+                .project
+                    img(src="img/projects/haven.png")
+                    .info
+                        h4 Haven v1
+                        p Project Manager
+                        .buttons
+                            a(href="http://axwang.me/haven/",target="_blank")
+                                span.projects.fa.fa-external-link
+                
+                .project
+                    img(src="img/projects/orbalarm.png")
+                    .info
+                        h4 OrbAlarm
+                        p Location Based Alarms
+                        .buttons
+                            a(href="http://axwang.me/orbalarm/",target="_blank")
+                                span.projects.fa.fa-external-link
+
+                .project
+                    img(src="img/projects/coresearch.png")
+                    .info
+                        h4 Coresearch (Alpha)
+                        p Database Search Engine
+                        .buttons
+                            a(href="https://holmes.wzhang.me/search",target="_blank")
+                                span.projects.fa.fa-external-link
+                
+                .project
+                    img(src="img/projects/debrief.png")
+                    .info
+                        h4 Debrief
+                        p Daily News Reports
+                        .buttons
+                            p No Links
+
+        .view#music
+            h1 music
+            .social-icons
+                a(href="https://soundcloud.com/allden",target="_blank")
+                    span.music.fab.fa-soundcloud
+                a(href="https://open.spotify.com/artist/4drtOysPuPNEdiC0PNM6eo",target="_blank")
+                    span.music.fab.fa-spotify
+            .allden-tracks
+                .track
+                    img(src="img/music/repeat.jpg")
+                    .info
+                        h4 Repeat (EDM)
+                        p "Stuck between a smile and a frown"
+                        .buttons
+                            audio(src='song/repeat.mp3')
+                            span(onclick="playMusic(this)").music.fa.fa-play
+                            span.music-bar
+                .track
+                    img(src="img/music/upnext.jpg")
+                    .info
+                        h4 Up Next (Hip Hop)
+                        p "Nothing stoppin' us from being up next"
+                        .buttons
+                            audio(src='song/upnext.mp3')
+                            span(onclick="playMusic(this)").music.fa.fa-play
+                            span.music-bar
+                .track
+                    img(src="img/music/washedaway.jpg")
+                    .info
+                        h4 Washed Away (EDM)
+                        p "All my worries are washed away"
+                        .buttons
+                            audio(src='song/washedaway.mp3')
+                            span(onclick="playMusic(this)").music.fa.fa-play
+                            span.music-bar
+                .track
+                    img(src="img/music/zephyr.png")
+                    .info
+                        h4 Zephyr (EDM)
+                        p "Just to reach our home... find our home"
+                        .buttons
+                            audio(src='song/zephyr.mp3')
+                            span(onclick="playMusic(this)").music.fa.fa-play
+                            span.music-bar
+                .track
+                    img(src="img/music/allden.png")
+                    .info
+                        h4 Perfect Remix (Pop)
+                        p Ed Sheeran - Perfect
+                        .buttons
+                            audio(src='song/perfect.mp3')
+                            span(onclick="playMusic(this)").music.fa.fa-play
+                            span.music-bar
+                .track
+                    img(src="img/music/allden.png")
+                    .info
+                        h4 Him and I Remix (Pop)
+                        p G-Easy and Halsey - Him and I
+                        .buttons
+                            audio(src='song/himandi.mp3')
+                            span(onclick="playMusic(this)").music.fa.fa-play
+                            span.music-bar
+
+        .view#design
+            h1 design
+            .designs
+                .des
+                    img(src="img/design/augment.png")
+                    .info
+                        h4 Augment
+                        p Concept
+
+                .des
+                    img(src="img/design/chromapulse.jpg")
+                    .info
+                        h4 Chrome
+                        p Old Logo
+
+                .des
+                    img(src="img/design/remora.png")
+                    .info
+                        h4 Remora
+                        p Aerospace Startup
+                
+                .des
+                    img(src="img/design/dawn.png")
+                    .info
+                        h4 Dawn
+                        p Old Logo
+                        
+                .des
+                    img(src="img/design/tidbits.png")
+                    .info
+                        h4 Tidbits
+                        p Potential Startup
+                
+                .des
+                    img(src="img/design/foci.png")
+                    .info
+                        h4 Foci
+                        p Music Curator
+                
+
+        .footer
+            span &copy; Andrew Wang 2017. All Rights Reserved.
