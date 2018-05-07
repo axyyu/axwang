@@ -1,0 +1,55 @@
+DOCTYPE(html)
+html
+    head
+        meta(charset="utf-8")
+        meta(name="viewport",content="width=device-width, initial-scale=1.0") 
+        title="Haven"
+        
+        link(rel="shortcut icon" type="image/png" href="img/favicon.png")
+
+        //- CSS
+        link(rel="stylesheet" type="text/css" href="./css/project.css?v=1")
+
+        //- JS
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js")
+        script(src="./js/jquery.js")
+        script(src="./js/project.js")
+
+    body
+        //- span.fa.fa-circle-o-notch.fa-spin.fa-3x.fa-fw
+        .header
+            span andrew x wang
+
+        .view#intro
+            img(src="img/projects/haven.png")
+            h2 Haven
+            h3 Widget Task Manager
+            .social-icons
+                a(href="")
+                    span.fas.fa-link
+                a(href="")
+                    span.fab.fa-github
+
+        .view#overview
+            .column
+                .container#status
+                    canvas#progress(height="200",width="200",perc="99")
+                    h2 Status: Finished
+            .column
+                .container
+                    h2 Tools
+                    .social-icons
+                        //- firebase
+                        //- nwjs
+                        span.fab.fa-node-js
+                        
+                .container
+                    h2 Platform
+                    .social-icons
+                        span.fas.fa-desktop
+                        span.fab.fa-windows
+                        span.fab.fa-microsoft
+                        span.fab.fa-apple
+
+        .footer
+            span &copy; Andrew Wang 2017. All Rights Reserved.

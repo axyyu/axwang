@@ -4,7 +4,6 @@ $music: #3cacd7;
 $design:#488398;
 $secondary: #f4f4f4;
 
-
 @mixin respond-to($media){
     @if $media == mobile {
         @media only screen and (max-width: 850px) { @content; }
@@ -65,35 +64,6 @@ a{
 	margin: 0;
 }
 
-.intro{
-	&:hover {
-		cursor: pointer;
-		color: $intro;
-		opacity: 1 !important;
-	}
-}
-.projects{
-	&:hover {
-		cursor: pointer;
-		color: $projects;
-		opacity: 1 !important;
-	}
-}
-.music{
-	&:hover {
-		cursor: pointer;
-		color: $music;
-		opacity: 1 !important;
-	}
-}
-.design{
-	&:hover {
-		cursor: pointer;
-		color: $design;
-		opacity: 1 !important;
-	}
-}
-
 .header{
 	position:fixed;
 	background: $secondary;
@@ -126,7 +96,8 @@ a{
 .social-icons{
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+    justify-content: center;
+    margin: 20px 0;
 
 	a{
 		margin: 0 2vw;
@@ -146,21 +117,42 @@ a{
 		justify-content: space-around;
     }
 }
-.arrow-down{
-	text-align:center;
-	margin: 0 auto;
-	font-size: 3.0em;
-	position:relative;
-	margin-top: -70px;
-	transition: margin 0.3s ease;
 
-	.fa-angle-double-down{
-		&:hover{
-			cursor: pointer;
-			margin-top: -10px;
-			opacity: .5;
-		}
-	}
+
+#intro{
+    margin: 0;
+    text-align: center;
+
+    img{
+        margin: 20px auto;
+        height: 30vh;
+        width: 30vh;
+    }
+    h2{
+        font-size: 3em;
+        margin: 10px 0px;
+    }
+    h3{
+        display: inline-block;
+        margin: 10px auto;
+        font-size: 1.2em;
+        line-height: 1.3em;
+        max-width: 500px;
+    }
+}
+
+#overview{
+    display: grid;
+    grid-template-columns: 30vw 30vw;
+    grid-column-gap: 20px;
+
+    .column{
+        background-color: blue;
+
+        .container{
+            
+        }
+    }
 }
 
 .footer{
@@ -169,10 +161,5 @@ a{
 	margin: 0 auto;
 }
 
-// @import "home";
-@import "intro";
-@import "music";
-@import "projects";
-@import "design";
 @import "fontawesome";
 @import "fonts";
